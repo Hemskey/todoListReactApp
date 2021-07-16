@@ -9,7 +9,7 @@ import './components/App.css'
 
 ReactDOM.render(
     <React.StrictMode>
-        <Router basename={ProcessingInstruction.env.PUBLIC_URL}>
+        <Router basename={process.env.PUBLIC_URL}>
             <TodoContainer />
         </Router>
     </React.StrictMode>, 
