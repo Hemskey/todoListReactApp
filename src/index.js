@@ -1,4 +1,4 @@
-import {HashRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom'
 import ReactDOM from "react-dom"
 import React from "react"
 //component files
@@ -9,7 +9,7 @@ import './components/App.css'
 
 ReactDOM.render(
     <React.StrictMode>
-        <Router>
+        <Router basename={ProcessingInstruction.env.PUBLIC_URL}>
             <TodoContainer />
         </Router>
     </React.StrictMode>, 
